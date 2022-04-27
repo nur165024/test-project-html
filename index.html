@@ -20,11 +20,13 @@
       href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
+
     <!-- fontawesome icons -->
     <script
       src="https://kit.fontawesome.com/d506681b8d.js"
       crossorigin="anonymous"
     ></script>
+
     <!-- style css -->
     <link rel="stylesheet" href="./css/style.css" />
   </head>
@@ -35,24 +37,66 @@
       <div class="container">
         <div class="row">
           <div class="col-md-6">
-            <div class="d-flex">
+            <div class="d-flex align-items-center">
               <div>
                 <img src="./image/logo.png" alt="logo" />
               </div>
+
               <div>
-                <p>Welcome Roma — <a id="logout" href="#">Logout</a></p>
+                <p class="font-size-14px font-weight-regular">
+                  Welcome <b>Roma</b> —
+                  <a
+                    class="color-blue font-weight-medium text-decoration-none"
+                    href="#"
+                    >Logout</a
+                  >
+                </p>
                 <p>Your balance: <b>Р 0,00</b></p>
               </div>
             </div>
           </div>
+
           <div class="col-md-6 d-flex justify-content-end">
-            <div>
-              <div>
-                <i class="fa-brands fa-facebook-f"></i>
-                <i class="fa-brands fa-twitter"></i>
-                <i class="fa-brands fa-facebook-messenger"></i>
-                <i class="fa-brands fa-whatsapp"></i>
-              </div>
+            <div class="socialMedia">
+              <ul class="d-flex gap-15 my-2">
+                <li>
+                  <a
+                    class="wh-20 color-white d-inline-block background-fbColor text-center rounded-circle"
+                    href="#"
+                  >
+                    <i class="font-size-10px fa-brands fa-facebook-f"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="wh-20 color-white d-inline-block background-twitterColor text-center rounded-circle"
+                    href="#"
+                  >
+                    <i class="font-size-10px fa-brands fa-twitter"></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="wh-20 color-white d-inline-block background-fbColor text-center rounded-circle"
+                    href="#"
+                  >
+                    <i
+                      class="font-size-10px fa-brands fa-facebook-messenger"
+                    ></i>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    class="wh-20 color-white d-inline-block background-whatsappColor text-center rounded-circle"
+                    href="#"
+                  >
+                    <i class="font-size-12px fa-brands fa-whatsapp"></i>
+                  </a>
+                </li>
+              </ul>
               <select name="" id="">
                 <option value="1">English</option>
                 <option value="2">Spain</option>
@@ -61,8 +105,8 @@
           </div>
         </div>
 
-        <nav class="navbar navbar-expand-lg navbar-light">
-          <div class="container-fluid">
+        <nav class="navbar-expand-lg navbar-light">
+          <div class="my-3">
             <button
               class="navbar-toggler"
               type="button"
@@ -75,25 +119,48 @@
               <span class="navbar-toggler-icon"></span>
             </button>
 
-            <div class="collapse navbar-collapse" id="navbarNav">
-              <ul class="navbar-nav">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Home</a>
+            <div
+              class="collapse navbar-collapse background-red h-35px border-radius-8px"
+              id="navbarNav"
+            >
+              <ul class="d-flex gap-15 ms-4">
+                <li>
+                  <a
+                    class="font-size-16px font-weight-bold text-uppercase color-white"
+                    href="#"
+                    >Home</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Play All lottery</a>
+                <li>
+                  <a
+                    class="font-size-16px font-weight-bold text-uppercase color-white"
+                    href="#"
+                    >Play All lottery</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Lottery Groups</a>
+                <li>
+                  <a
+                    class="font-size-16px font-weight-bold text-uppercase color-white"
+                    href="#"
+                    >Lottery Groups</a
+                  >
                 </li>
-                <li class="nav-item">
-                  <a class="nav-link" href="#">Promotions</a>
+                <li>
+                  <a
+                    class="font-size-16px font-weight-bold text-uppercase color-white"
+                    href="#"
+                    >Promotions</a
+                  >
                 </li>
               </ul>
 
-              <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                  <a class="nav-link" href="#">My Account</a>
+              <ul class="ms-auto background-blue h-35px border-radius-8px px-4">
+                <li>
+                  <a
+                    class="font-size-16px font-weight-bold text-uppercase color-white"
+                    href="#"
+                    >My Account</a
+                  >
                 </li>
               </ul>
             </div>
@@ -103,7 +170,7 @@
     </section>
 
     <!-- banner -->
-    <section>
+    <section class="pt-3">
       <div class="container">
         <div class="row">
           <div class="col-md-12">
@@ -112,36 +179,53 @@
         </div>
 
         <!-- banner bottom -->
-        <div class="row">
-          <div class="col-md-4 col">
-            <div class="d-flex">
-              <div>
-                <img src="./image/pick.png" alt="pick" />
+        <div class="row mt-md-5 mt-3 bannerBottom">
+          <div class="col-md-4 mb-3 col-12">
+            <div class="d-flex border-gray-light-1px border-radius-8px p-2">
+              <div class="me-2">
+                <img class="img-fluid" src="./image/pick.png" alt="pick" />
               </div>
+
               <div>
                 <div class="d-flex justify-content-between">
-                  <h5>you pick</h5>
-                  <a href="#">Play Now » </a>
+                  <h5
+                    class="font-size-16px font-weight-medium color-black text-uppercase"
+                  >
+                    you pick
+                  </h5>
+                  <a
+                    class="font-size-14px font-weight-medium color-blue"
+                    href="#"
+                    >Play Now »
+                  </a>
                 </div>
-                <p>
+                <p class="font-size-14px font-weight-regular color-drey">
                   It’s easy! Pick from over 40 official lottery games you wish
-                  to play. Then select your winning numbers.
+                  to play.
                 </p>
               </div>
             </div>
           </div>
 
-          <div class="col-md-4 col">
-            <div class="d-flex">
-              <div>
-                <img src="./image/buy.png" alt="pick" />
+          <div class="col-md-4 mb-3 col-12">
+            <div class="d-flex border-gray-light-1px border-radius-8px p-2">
+              <div class="me-2">
+                <img class="img-fluid" src="./image/buy.png" alt="pick" />
               </div>
               <div>
                 <div class="d-flex justify-content-between">
-                  <h5>we buy</h5>
-                  <a href="#">More Details »</a>
+                  <h5
+                    class="font-size-16px font-weight-medium color-black text-uppercase"
+                  >
+                    we buy
+                  </h5>
+                  <a
+                    class="font-size-14px font-weight-medium color-blue"
+                    href="#"
+                    >More Details »</a
+                  >
                 </div>
-                <p>
+                <p class="font-size-14px font-weight-regular color-drey">
                   Once you’ve picked your winning numbers we’ll purchase your
                   ticket on your behalf.
                 </p>
@@ -149,17 +233,25 @@
             </div>
           </div>
 
-          <div class="col-md-4 col">
-            <div class="d-flex">
-              <div>
-                <img src="./image/win.png" alt="pick" />
+          <div class="col-md-4 col-12">
+            <div class="d-flex border-gray-light-1px border-radius-8px p-2">
+              <div class="me-2">
+                <img class="img-fluid" src="./image/win.png" alt="pick" />
               </div>
               <div>
                 <div class="d-flex justify-content-between">
-                  <h5>you win</h5>
-                  <a href="#">Withdraw My Winnings »</a>
+                  <h5
+                    class="font-size-16px font-weight-medium color-black text-uppercase"
+                  >
+                    you win
+                  </h5>
+                  <a
+                    class="font-size-14px font-weight-medium color-blue"
+                    href="#"
+                    >Withdraw My Winnings »</a
+                  >
                 </div>
-                <p>
+                <p class="font-size-14px font-weight-regular color-drey">
                   When you win, we’ll automatically credit your account the full
                   value of your winnings.
                 </p>
@@ -171,27 +263,48 @@
     </section>
 
     <!-- BIGGEST UPCOMING LOTTERY DRAWS -->
-    <section>
+    <section class="padding-top">
       <div class="container">
         <div class="row">
           <div class="col-12">
-            <h3>BIGGEST UPCOMING LOTTERY DRAWS</h3>
+            <h3
+              class="font-size-24px font-weight-medium color-black text-uppercase mb-3"
+            >
+              BIGGEST UPCOMING LOTTERY DRAWS
+            </h3>
           </div>
 
-          <div class="col-md-4">
-            <div>
-              <div class="d-flex">
-                <div>
-                  <img src="./image/mega-1.png" alt="" />
+          <div class="col-md-4 mb-3 col-12">
+            <div class="border-gray-light-1px border-radius-8px">
+              <div class="d-flex justify-content-around align-items-center p-2">
+                <div
+                  class="border-gray-light-2px egg-circle text-center rounded-circle"
+                >
+                  <img class="img-fluid" src="./image/mega-1.png" alt="" />
                 </div>
+
                 <div>
-                  <h6><img src="./image/flag.png" alt="" /> Mega Millions</h6>
-                  <h4>$94 000 000</h4>
+                  <h6
+                    class="font-size-14px font-weight-medium color-black d-flex align-items-center"
+                  >
+                    <img class="img-fluid me-1" src="./image/flag.png" alt="" />
+                    <span>Mega Millions</span>
+                  </h6>
+                  <h4 class="font-size-26px font-weight-bold color-green">
+                    $94 000 000
+                  </h4>
                 </div>
               </div>
-              <div class="d-flex">
-                <a href="#">Play Now</a>
-                <p>
+
+              <div
+                class="d-flex justify-content-around align-items-center h-60px border-radius-8px-bottom background-blue"
+              >
+                <a
+                  class="background-yellow text-decoration-none d-inline-block h-35px w-50 text-center border-radius-8px font-size-16px font-weight-medium color-black yello-button-hover-none"
+                  href="#"
+                  >Play Now</a
+                >
+                <p class="text-white">
                   <img src="./image/alarm-icon.png" alt="" />
                   1:22:01
                 </p>
@@ -199,20 +312,37 @@
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div>
-              <div class="d-flex">
-                <div>
+          <div class="col-md-4 mb-3 col-12">
+            <div class="border-gray-light-1px border-radius-8px">
+              <div class="d-flex justify-content-around align-items-center p-2">
+                <div
+                  class="border-gray-light-2px egg-circle text-center rounded-circle"
+                >
                   <img src="./image/mega-2.png" alt="" />
                 </div>
+
                 <div>
-                  <h6><img src="./image/flag.png" alt="" /> Mega Millions</h6>
-                  <h4>$94 000 000</h4>
+                  <h6
+                    class="font-size-14px font-weight-medium color-black d-flex align-items-center"
+                  >
+                    <img class="img-fluid me-1" src="./image/flag.png" alt="" />
+                    <span>Mega Millions</span>
+                  </h6>
+                  <h4 class="font-size-26px font-weight-bold color-green">
+                    $94 000 000
+                  </h4>
                 </div>
               </div>
-              <div class="d-flex">
-                <a href="#">Play Now</a>
-                <p>
+
+              <div
+                class="d-flex justify-content-around align-items-center h-60px border-radius-8px-bottom background-blue"
+              >
+                <a
+                  class="background-yellow text-decoration-none d-inline-block h-35px w-50 text-center border-radius-8px font-size-16px font-weight-medium color-black yello-button-hover-none"
+                  href="#"
+                  >Play Now</a
+                >
+                <p class="text-white">
                   <img src="./image/alarm-icon.png" alt="" />
                   1:22:01
                 </p>
@@ -220,23 +350,467 @@
             </div>
           </div>
 
-          <div class="col-md-4">
-            <div>
-              <div class="d-flex">
-                <div>
+          <div class="col-md-4 col-12">
+            <div class="border-gray-light-1px border-radius-8px">
+              <div class="d-flex justify-content-around align-items-center p-2">
+                <div
+                  class="border-gray-light-2px egg-circle text-center rounded-circle"
+                >
                   <img src="./image/mega-3.png" alt="" />
                 </div>
                 <div>
-                  <h6><img src="./image/flag.png" alt="" /> Mega Millions</h6>
-                  <h4>$94 000 000</h4>
+                  <h6
+                    class="font-size-14px font-weight-medium color-black d-flex align-items-center"
+                  >
+                    <img class="img-fluid me-1" src="./image/flag.png" alt="" />
+                    Mega Millions
+                  </h6>
+                  <h4 class="font-size-26px font-weight-bold color-green">
+                    $94 000 000
+                  </h4>
                 </div>
               </div>
-              <div class="d-flex">
-                <a href="#">Play Now</a>
-                <p>
+
+              <div
+                class="d-flex justify-content-around align-items-center h-60px border-radius-8px-bottom background-blue"
+              >
+                <a
+                  class="background-yellow text-decoration-none d-inline-block h-35px w-50 text-center border-radius-8px font-size-16px font-weight-medium color-black yello-button-hover-none"
+                  href="#"
+                  >Play Now</a
+                >
+                <p class="text-white">
                   <img src="./image/alarm-icon.png" alt="" />
                   1:22:01
                 </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PLAY UPCOMING LOTTERIES ONLINE -->
+    <section class="padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col">
+            <h5>PLAY UPCOMING LOTTERIES ONLINE</h5>
+          </div>
+        </div>
+
+        <div class="row row-cols-md-5">
+          <div class="col">
+            <div>
+              <div class="d-flex justify-content-between">
+                <img src="./image/mega-2.png" alt="mega" />
+                <p><i class="fa-solid fa-star"></i></p>
+              </div>
+
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <div>
+                <img src="./image/mega-2.png" alt="mega" />
+              </div>
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <div>
+                <img src="./image/mega-2.png" alt="mega" />
+              </div>
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <div>
+                <img src="./image/mega-2.png" alt="mega" />
+              </div>
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <div>
+                <img src="./image/mega-2.png" alt="mega" />
+              </div>
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <div>
+              <div>
+                <img src="./image/mega-2.png" alt="mega" />
+              </div>
+              <div>
+                <p>
+                  <img src="./image/flag.png" alt="" />
+                  Mega Millions
+                </p>
+                <h5>$122 000 000</h5>
+                <p><img src="./image/alarm.png" alt="" /> 1:22:01</p>
+                <a href="#">Play now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- beggest lottery winner and our latest winners -->
+    <section class="padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-8">
+            <div>
+              <h4>BIGGEST LOTTERY WINNER</h4>
+            </div>
+            <div class="d-flex">
+              <img src="./image/lotto.png" alt="" />
+              <h4>Won <span>€100 000 000</span></h4>
+            </div>
+
+            <div class="d-flex">
+              <img src="./image/beggest-winner.png" alt="" />
+              <div>
+                <h6>Shaun Vincent a Lottery Winner</h6>
+                <p>
+                  Shaun Vincent, from Barnsley, celebrates his £1,158,038
+                  National Lottery win after his cheque presentation at the
+                  Cedar Court Hotel, Wakefield.
+                </p>
+                <a href="#">Read the full story</a>
+              </div>
+            </div>
+
+            <div class="d-flex">
+              <div class="d-flex">
+                <h6>UK Lotto results:</h6>
+                <div>
+                  <ul class="d-flex">
+                    <li>07</li>
+                    <li>07</li>
+                    <li>07</li>
+                    <li>07</li>
+                    <li>07</li>
+                  </ul>
+                  <span>Date: 20.11.2021</span>
+                </div>
+              </div>
+              <div>
+                <a href="#">Play Now</a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div>
+              <div>
+                <h4>BIGGEST LOTTERY WINNER</h4>
+              </div>
+
+              <div>
+                <p>Total prizes paid out</p>
+                <h4>US$ 107 233 768</h4>
+                <h4>6 975 146 <span>winning tickets</span></h4>
+              </div>
+
+              <div class="d-flex">
+                <div>
+                  <img src="./image/winner-logo.png" alt="" />
+                </div>
+                <div>
+                  <span>20.11.2021</span>
+                  <div class="d-flex">
+                    <img src="./image/germany.png" alt="" />
+                    <p>J.J won Р175</p>
+                  </div>
+                  <p>in 7 ИЗ 49 draw #13476</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FREQUENTLY ASKED QUESTION (F.A.Q.) -->
+    <section class="padding-top">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <h3>FREQUENTLY ASKED QUESTION (F.A.Q.)</h3>
+          </div>
+          <div class="col-8">
+            <div class="accordion accordion-flush" id="accordionFlushExample">
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingOne">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseOne"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseOne"
+                  >
+                    Accordion Item #1
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseOne"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingOne"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the first item's accordion body.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingTwo">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseTwo"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseTwo"
+                  >
+                    Accordion Item #2
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseTwo"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingTwo"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the second item's accordion body. Let's imagine this being
+                    filled with some actual content.
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <h2 class="accordion-header" id="flush-headingThree">
+                  <button
+                    class="accordion-button collapsed"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#flush-collapseThree"
+                    aria-expanded="false"
+                    aria-controls="flush-collapseThree"
+                  >
+                    Accordion Item #3
+                  </button>
+                </h2>
+                <div
+                  id="flush-collapseThree"
+                  class="accordion-collapse collapse"
+                  aria-labelledby="flush-headingThree"
+                  data-bs-parent="#accordionFlushExample"
+                >
+                  <div class="accordion-body">
+                    Placeholder content for this accordion, which is intended to
+                    demonstrate the <code>.accordion-flush</code> class. This is
+                    the third item's accordion body. Nothing more exciting
+                    happening here in terms of content, but just filling up the
+                    space to make it look, at least at first glance, a bit more
+                    representative of how this would look in a real-world
+                    application.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- footer -->
+    <section>
+      <div class="container" id="footerPart"></div>
+      <div class="container lineargradient">
+        <div class="row">
+          <div class="col-12">
+            <div class="d-flex justify-content-between">
+              <ul>
+                <li class="d-flex">
+                  <div><i class="fa-brands fa-whatsapp"></i></div>
+                  <div>
+                    <p>Live chat by WhatsApp</p>
+                    <span>Customer Service</span>
+                  </div>
+                </li>
+              </ul>
+
+              <ul class="d-flex">
+                <li>
+                  <i class="fa-brands fa-facebook-f"></i>
+                </li>
+                <li><i class="fa-brands fa-twitter"></i></li>
+                <li><i class="fa-brands fa-facebook-messenger"></i></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-4">
+            <div>
+              <h6>USEFUL LINKS</h6>
+
+              <ul>
+                <li>
+                  <a href="#">Lottery Results & Winners</a>
+                </li>
+                <li>
+                  <a href="#">Lottery Promotions</a>
+                </li>
+                <li>
+                  <a href="#">About Us</a>
+                </li>
+                <li>
+                  <a href="#">Contact Us</a>
+                </li>
+                <li>
+                  <a href="#">Terms & Conditions</a>
+                </li>
+                <li>
+                  <a href="#">Security</a>
+                </li>
+                <li>
+                  <a href="#">Privacy Policy</a>
+                </li>
+                <li>
+                  <a href="#">Acceptable Use Policy</a>
+                </li>
+                <li>
+                  <a href="#">Website Use Policy</a>
+                </li>
+                <li>
+                  <a href="#"><b>Affiliate program</b></a>
+                </li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="col-md-4">
+            <div>
+              <h6>SMARTWINNERS</h6>
+
+              <p>
+                The trade name SmartWinners and all content on this website is a
+                copyright of SmartWinners Limited. All rights reserved. We are
+                an independent lottery ticket purchasing service. We are not
+                affiliated with nor are we endorsed by any State sanctioned
+                lottery organization. We make no claims on our site to be such.
+              </p>
+
+              <p>
+                Our registered business address is Unit 6158, PO Box 6945,
+                London, W1A 6US, United Kingdom.
+              </p>
+            </div>
+          </div>
+
+          <div class="col-md-2"></div>
+
+          <div class="col-md-2">
+            <div>
+              <h6>PAYMENT METHODS</h6>
+
+              <ul class="row row-cols-3">
+                <li>
+                  <img src="./image/visa.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/masterCard.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/maestro.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/dinersClub.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/skrill.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/bitcoin.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/qiwi.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/hsbc.png" alt="" />
+                </li>
+                <li>
+                  <img src="./image/litecoin.png" alt="" />
+                </li>
+              </ul>
+            </div>
+
+            <div>
+              <h6>SECURITY & TRUST</h6>
+              <div>
+                <img src="./image/ctv-logo-footer.png" alt="" />
+                <img src="./image/comodo-logo-footer.png" alt="" />
               </div>
             </div>
           </div>
